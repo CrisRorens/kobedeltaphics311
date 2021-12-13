@@ -64,30 +64,6 @@ func main() {
 	}
 }
 
-func buyShovel() {
-	var k, r, i, count, value int
-	fmt.Scan(&k)
-	fmt.Scan(&r)
-
-	i = 2
-	count = 1
-	value = k
-
-	for true {
-		if value%10 == 0 {
-			fmt.Println(count)
-			break
-		}
-		if value%10 == r {
-			fmt.Println(count)
-			break
-		}
-		value = k * i
-		count++
-		i++
-	}
-}
-
 func telephoneNumber() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
@@ -164,5 +140,29 @@ func seventyOneA() {
 		} else {
 			fmt.Printf("%s\n", wrd[i])
 		}
+	}
+}
+
+func buyShovel() {
+	var k, r, i, count, value int
+	fmt.Scan(&k)
+	fmt.Scan(&r)
+
+	i = 2
+	count = 1
+	value = k
+
+	for true {
+		if value%10 == 0 {
+			fmt.Println(count)
+			break
+		}
+		if value%10 == r {
+			fmt.Println(count)
+			break
+		}
+		value = k * i
+		count++
+		i++
 	}
 }
