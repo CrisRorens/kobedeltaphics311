@@ -12,7 +12,7 @@ func main() {
 		var choice int
 		fmt.Println("\n+========================+")
 		fmt.Println("| CodeForces Problem Set |")
-		fmt.Println("|     Kobedelta Phi      |")
+		fmt.Println("|     KOBEDELTA PHI      |")
 		fmt.Println("+========================+")
 		fmt.Println("|       MAIN MENU        |")
 		fmt.Println("|[1] Word Capitalization |")
