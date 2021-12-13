@@ -18,6 +18,7 @@ func main() {
 		fmt.Println("|[1] Word Capitalization |")
 		fmt.Println("|[2] Translation         |")
 		fmt.Println("|[3] Problem 71A         |")
+		fmt.Println("|[4] Strange Table       |")
 		fmt.Println("|[4] Exit                |")
 		fmt.Println("+========================+")
 		fmt.Print("Option: ")
@@ -37,6 +38,10 @@ func main() {
 			fmt.Println("+========================+")
 			seventyOneA()
 		case 4:
+			fmt.Println("|      Strange Table     |")
+			fmt.Println("+========================+")
+			strangeTable()
+		case 5:
 			fmt.Println("            END           ")
 			os.Exit(3)
 		default:
@@ -46,6 +51,30 @@ func main() {
 		}
 	}
 
+}
+
+func strangeTable() {
+	var t int
+	fmt.Print()
+	fmt.Scan(&t)
+
+	var i int
+	for i = 0; i < t; i++ {
+		var a, b, c, x, y, z int
+		fmt.Print()
+		fmt.Scan(&a)
+		fmt.Scan(&b)
+		fmt.Scan(&c)
+
+		x = c % a
+		if x == 0 {
+			x = a
+		}
+		y = (c + a - 1) / a
+		z = (x-1)*b + y
+
+		fmt.Println(z)
+	}
 }
 
 func wordCapitalization() {
