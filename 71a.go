@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 	"unicode"
 )
@@ -42,6 +44,10 @@ func main() {
 			fmt.Println("+========================+")
 			strangeTable()
 		case 5:
+			fmt.Println("|    Telephone Number    |")
+			fmt.Println("+========================+")
+			telephoneNumber()
+		case 6:
 			fmt.Println("            END           ")
 			os.Exit(3)
 		default:
@@ -51,6 +57,25 @@ func main() {
 		}
 	}
 
+}
+
+func telephoneNumber() {
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	n, _ := strconv.ParseInt(scanner.Text(), 10, 64)
+	scanner.Scan()
+	str := scanner.Text()
+	j := int64(strings.Index(str, "8"))
+	t := n - j
+	if n < 11 {
+		fmt.Println("NO")
+	} else {
+		if t < 11 || j < 0 {
+			fmt.Println("NO")
+		} else {
+			fmt.Println("YES")
+		}
+	}
 }
 
 func strangeTable() {
