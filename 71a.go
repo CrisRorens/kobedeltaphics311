@@ -50,6 +50,10 @@ func main() {
 			fmt.Println("+========================+")
 			telephoneNumber()
 		case 6:
+			fmt.Println("|       Buy Shovel       |")
+			fmt.Println("+========================+")
+			buyShovel()
+		case 7:
 			fmt.Println("            END           ")
 			os.Exit(3)
 		default:
@@ -58,7 +62,30 @@ func main() {
 
 		}
 	}
+}
 
+func buyShovel() {
+	var k, r, i, count, value int
+	fmt.Scan(&k)
+	fmt.Scan(&r)
+
+	i = 2
+	count = 1
+	value = k
+
+	for true {
+		if value%10 == 0 {
+			fmt.Println(count)
+			break
+		}
+		if value%10 == r {
+			fmt.Println(count)
+			break
+		}
+		value = k * i
+		count++
+		i++
+	}
 }
 
 func telephoneNumber() {
