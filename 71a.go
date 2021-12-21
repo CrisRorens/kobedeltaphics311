@@ -107,13 +107,6 @@ func strangeTable() {
 	}
 }
 
-func wordCapitalization() {
-	inputString := "i rEmEmbeR iT, aLl tOo wElL"
-	tmp := []rune(inputString)
-	outputString := string(unicode.ToUpper(tmp[0])) + string(strings.ToLower(inputString[1:]))
-	fmt.Println(outputString)
-}
-
 func translation() {
 	var s, t string
 	fmt.Scan(&s, &t)
@@ -165,4 +158,11 @@ func buyShovel() {
 		count++
 		i++
 	}
+}
+
+func wordCapitalization() {
+	inputString := "i rEmEmbeR iT, aLl tOo wElL"
+	tmp := []rune(inputString)
+	outputString := string(unicode.ToUpper(tmp[0])) + string(strings.ToLower(inputString[1:]))
+	fmt.Println(outputString)
 }
