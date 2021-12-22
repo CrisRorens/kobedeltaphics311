@@ -9,7 +9,7 @@ import (
 	"unicode"
 )
 
-//sample push part 2
+//sample push part 3
 
 func main() {
 	for {
