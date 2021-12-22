@@ -11,7 +11,7 @@ func main() {
 	for {
 		var choice int
 		fmt.Println("\n+========================+")
-		fmt.Println("| CodeForces Problem Set |")
+		fmt.Println("| CODEFORCES PROBLEM SET |")
 		fmt.Println("|     KOBEDELTA PHI      |")
 		fmt.Println("+========================+")
 		fmt.Println("|       MAIN MENU        |")
