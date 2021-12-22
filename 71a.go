@@ -9,9 +9,7 @@ import (
 	"unicode"
 )
 
-//sample change
-
-//sample comment
+//sample push
 
 func main() {
 	for {
