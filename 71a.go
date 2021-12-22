@@ -25,7 +25,7 @@ func main() {
 		fmt.Println("|[4] Strange Table       |")
 		fmt.Println("|[4] Exit                |")
 		fmt.Println("+========================+")
-		fmt.Print("Option: ")
+		fmt.Print("Options: ")
 		fmt.Scanf("%d", &choice)
 		fmt.Println("\n+========================+")
 		switch choice {
