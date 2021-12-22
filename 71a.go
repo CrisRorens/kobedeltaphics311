@@ -11,6 +11,8 @@ import (
 
 //sample change
 
+//sample comment
+
 func main() {
 	for {
 		var choice int
