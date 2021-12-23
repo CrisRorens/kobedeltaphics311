@@ -23,7 +23,7 @@ func main() {
 		fmt.Println("|[2] Translation         |")
 		fmt.Println("|[3] Problem 71A         |")
 		fmt.Println("|[4] Strange Table       |")
-		fmt.Println("|[4] Exit                |")
+		fmt.Println("|[4] labas                |")
 		fmt.Println("+========================+")
 		fmt.Print("Options: ")
 		fmt.Scanf("%d", &choice)
